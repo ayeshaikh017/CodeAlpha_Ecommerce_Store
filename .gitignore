@@ -1,0 +1,170 @@
+# ================================
+# Node.js & npm
+# ================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# Package lock files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# ================================
+# Environment Variables
+# ================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ================================
+# Build & Distribution
+# ================================
+dist/
+build/
+*.tgz
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ================================
+# OS Files
+# ================================
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ================================
+# IDE & Editors
+# ================================
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# JetBrains IDEs (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+
+# ================================
+# Testing
+# ================================
+coverage/
+*.lcov
+.nyc_output
+.grunt
+bower_components
+.lock-wscript
+lib-cov
+
+# ================================
+# Runtime & Cache
+# ================================
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+*.pid
+*.seed
+*.pid.lock
+
+# ================================
+# MongoDB
+# ================================
+data/db/
+*.mdb
+*.ldb
+
+# ================================
+# Uploads & User Generated Content
+# ================================
+# Uncomment if you don't want to track uploaded images
+# frontend/images/*
+# !frontend/images/.gitkeep
+
+uploads/
+temp/
+tmp/
+
+# ================================
+# Misc
+# ================================
+*.bak
+*.swp
+*.orig
+.cache/
+
+# ================================
+# Project Specific
+# ================================
+# Keep this commented if you want to track your product images
+# Otherwise uncomment to ignore user uploads
+# backend/uploads/*
+# !backend/uploads/.gitkeep

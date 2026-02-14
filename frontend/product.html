@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details - E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html" id="authLink">Login</a>
+    </div>
+
+    <div class="product-detail" id="productDetail"></div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        fetch(`http://localhost:5000/api/products/${productId}`)
+            .then(res => res.json())
+            .then(product => {
+                document.getElementById("productDetail").innerHTML = `
+                    <img src="${product.image}" width="400"/>
+                    <div class="product-info">
+                        <h1>${product.name}</h1>
+                        <p class="description">${product.description}</p>
+                        <p class="price">₹${product.price}</p>
+                        <button onclick="addToCart('${product._id}')" class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                `;
+            });
+
+        function addToCart(id) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(id);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            alert("Added to cart!");
+        }
+    </script>
+</body>
+</html>
